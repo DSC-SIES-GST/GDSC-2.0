@@ -1,0 +1,24 @@
+{
+  "name": "gdsc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/css/main.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DSC-SIES-GST/GDSC-2.0.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DSC-SIES-GST/GDSC-2.0/issues"
+  },
+  "homepage": "https://github.com/DSC-SIES-GST/GDSC-2.0#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
