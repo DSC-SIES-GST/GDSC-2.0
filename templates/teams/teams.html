@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static  %}
+{% block content %}
+<main class="team-main">
+  <div class="team">
+    <div class="team-desc">
+      <h1>GDSC Team </h1>
+      <p>We are a team that excels in raising and transmitting technical and leadership skills in students. The GDSC program is a mainstream channel through which Google providers development skills.</p>
+    </div>
+    <div class="item-list">
+      <ul class="team-list">
+      {% if domains %}
+      {% for domain in domains %}
+        <li class="team-items">
+              <div class="team-item">
+                <a href=" {% url 'team' domain.title %} ">
+                  {{ domain.title}}
+                </a>
+              </div>
+        </li>
+        {% endfor %}
+        {% else %}
+        <p>No Teams Available</p>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</main>
+{% endblock%}

@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+{% load static  %}
+{% block content %}
+<main class="teams-main">
+  <div class="team-details">
+    <div class="member-desc">
+      <a href="{% url 'teams' %}">
+        <span class="back">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: msFilter;margin: -1%;"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg>
+        </span>
+      </a>
+        <h1 class="member-title">{{ domain_name.title }}</h1>
+    </div>
+
+      <div class="member-details">
+
+        <!-- For Leads -->
+          <div class="row">
+            {% if members %}
+            {% for member in members %}
+            {% if member.is_lead %}
+              <div class="col-6">
+                <div class="wrapper">
+                  <div class="container">
+                    <div class="img-container">
+                      <img src="{{ member.photo.url }}" alt="">
+                    </div>
+                    <div class="mem-content">
+                      <div class="head">
+                        <h1>{{ member.name }}</h1>
+                        <span>Lead</span>
+                      </div>
+                      <div class="footer">
+                        <div class="footer-icon">
+                          <div class="footer-item">
+                            <a href="https://bit.ly/GDSCSIESGSTGitHub" class="footer-items">
+                              <i class='bx bxl-linkedin-square' ></i>
+                            </a>
+                            <a href="https://bit.ly/GDSCSIESGSTGitHub" class="footer-items">
+                              <i class='bx bxl-github' ></i>
+                            </a>
+                            <a href="https://bit.ly/GDSCSIESGSTGitHub" class="footer-items">
+                              <i class='bx bxl-instagram-alt' ></i>
+                            </a>
+                            <a href="https://bit.ly/GDSCSIESGSTGitHub" class="footer-items">
+                              <i class='bx bxs-envelope'></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% if members %}
+            {% for member in members %}
+            {% if member.is_colead %}
+              <div class="col-6">
+                <div class="wrapper">
+                  <div class="container">
+                    <div class="img-container">
+                      <img src="{{ member.photo.url }}" alt="">
+                    </div>
+                    <div class="mem-content">
+                      <div class="head">
+                        <h1>{{ member.name }}</h1>
+                        <span>Co-Lead</span>
+                      </div>
+                      <div class="footer">
+                        <div class="footer-icon">
+                          <div class="footer-item">
+                            <a href="https://bit.ly/GDSCSIESGSTGitHub" class="footer-items">
+                              <i class='bx bxl-linkedin-square' ></i>
+                            </a>
+                            <a href="https://bit.ly/GDSCSIESGSTGitHub" class="footer-items">
+                              <i class='bx bxl-github' ></i>
+                            </a>
+                            <a href="https://bit.ly/GDSCSIESGSTGitHub" class="footer-items">
+                              <i class='bx bxl-instagram-alt' ></i>
+                            </a>
+                            <a href="https://bit.ly/GDSCSIESGSTGitHub" class="footer-items">
+                              <i class='bx bxs-envelope'></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endif %}
+            {% endfor %}
+            {% endif %}
+          </div>
+          <div class="row">
+            <div class="wrap">
+            {% if members %}
+            {% for member in members %}
+            {% if member.is_coord %}
+                <div class="col-sm-4">
+                <div class="cord-wrapper">
+                  <div class="container">
+                    <div class="img-container">
+                      <img src="{{ member.photo.url }}" alt="">
+                    </div>
+                    <div class="mem-content">
+                      <div class="head">
+                        <h1>{{ member.name }}</h1>
+                        <span>Web Co-ord</span>
+                      </div>
+                      <div class="footer">
+                        <div class="footer-icon">
+                          <div class="footer-item">
+                            <a href="{{ member.linkedin }}" class="footer-items">
+                              <i class='bx bxl-linkedin-square' ></i>
+                            </a>
+                            <a href="{{ member.github }}" class="footer-items">
+                              <i class='bx bxl-github' ></i>
+                            </a>
+                            <a href="{{ member.instagram }}" class="footer-items">
+                              <i class='bx bxl-instagram-alt' ></i>
+                            </a>
+                            <a href="{{ member.instagram }}" class="footer-items">
+                              <i class='bx bxs-envelope' ></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+                {% endif %}
+              </div>
+          </div>
+    
+  </div>
+</main>
+{% endblock%}

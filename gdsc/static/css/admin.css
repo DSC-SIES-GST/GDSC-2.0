@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+body{
+  background: linear-gradient(rgb(220 234 244) 0%, rgb(221, 226, 253) 100%);
+  font-family: 'Noto Sans', sans-serif;
+}
+#header{
+  height: 50px;
+  background: linear-gradient(rgb(220 234 244) 0%, rgb(221, 226, 253) 100%);
+  color: white;
+}
+.dashboard #content h1{
+  color: #000;
+  font-weight: bold;
+}
+#content h1{
+  color: #000;
+  font-weight: bold;
+}
+#branding h1{
+    padding-left: 10px;
+    text-shadow: 0px 2px 1px rgb(0 0 0 / 20%);
+    color: #2a2c2d;
+    font-weight: bold;
+}
+#user-tools,
+#user-tools a,
+#user-tools button{
+  color: #2a2c2d !important;
+  font-weight: 500;
+}
+a:link{
+  color: #2a2c2d;
+}
+.dashboard .module table td a,
+a:visited{
+  color: #FF5858;
+}
+a:hover{
+  color:#2a2c2d;
+}
+div.breadcrumbs {
+  background:linear-gradient(110deg,#CD6BFB 0%, #4358A5 100%) !important;
+  color:#ffffff;
+
+}
+div.breadcrumbs a{
+  color: #fff;
+}
+.module caption, .inline-group h2 {
+  background: linear-gradient(148deg, #FF5858 27%,#FFA858 100%);
+}
+.login .form-row #id_password,#changelist .actions select,#nav-filter,button, input[type=submit],input[type=text],textarea, input[type=button], .submit-row input, a.button{
+  background: #fff;
+  color: #000 !important;
+}
+fieldset{
+  background: linear-gradient(rgb(220 234 244) 0%, rgb(221, 226, 253) 100%) !important;
+  color: #000;
+}
+
+tr:nth-child(even),tr:nth-child(odd), .row-form-errors {
+  background: #fff;
+}
+
+#content-related{
+  background:linear-gradient(110deg,#CD6BFB 0%, #4358A5 100%) !important;
+}
+.aligned label {
+  color: #000 !important;
+}
+#changelist .actions button{
+  background-color: #dde9f6 !important;
+}
+
+.button:active, input[type=submit]:active, input[type=button]:active, .button:focus, input[type=submit]:focus, input[type=button]:focus, .button:hover, input[type=submit]:hover, input[type=button]:hover {
+  background:linear-gradient(110deg,#CD6BFB 0%, #4358A5 100%) !important;
+}
+
+#nav-sidebar,.toggle-nav-sidebar{
+  background: linear-gradient(rgb(220 234 244) 0%, rgb(221, 226, 253) 100%);
+  color: #000 !important;
+}
+
+.main{
+  transition: 0.3s;
+}
+
+#nav-sidebar .current-model{
+  background:linear-gradient(110deg,#CD6BFB 0%, #4358A5 100%) !important;
+}
+
+#changelist .actions{
+  background: linear-gradient(148deg, #FF5858 27%,#FFA858 100%) !important;
+}
+
+#content-related .actionlist a{
+  color: #000 !important;
+}
+
+#content-related .actionlist a:hover{
+  color: #fff !important;
+}
+
+.content p{
+  color: #000;
+}
