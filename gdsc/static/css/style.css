@@ -859,6 +859,7 @@ details[open] .control-icon-expand {
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
+  overflow-x: scroll;
 }
 .upcoming-event{
   display: inline;
